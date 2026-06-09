@@ -19,7 +19,7 @@ import {
   writeFileTool,
   executeCommandTool,
   listDirectoryTool
-} from "./tool-file-read.mjs";
+} from "./all-tools.mjs";
 import chalk from "chalk";
 
 const model = new ChatOpenAI({
