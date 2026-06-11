@@ -73,7 +73,7 @@ server.registerResource('使用指南', 'docs://guide', {
     contents: [{
       uri: 'docs://guide',
       mimeType: 'text/plain',
-      content: `MCP Server 使用指南：
+      text: `MCP Server 使用指南：
 
 功能：提供用户查询等工具。
 
