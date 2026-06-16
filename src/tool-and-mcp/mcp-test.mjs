@@ -25,7 +25,7 @@ const mcpClient = new MultiServerMCPClient({
     'my-mcp-server': {
       command: 'node',
       args: [
-        '/Users/chanweiyan/workspace/noder/ai-agent/tool_test/src/my-mcp-server.mjs',
+        '/Users/chanweiyan/workspace/noder/ai-agent/tool_test/src/tool-and-mcp/my-mcp-server.mjs',
       ],
     },
     "amap-maps-streamableHTTP": {

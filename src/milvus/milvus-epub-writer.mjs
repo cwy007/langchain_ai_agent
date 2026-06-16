@@ -22,7 +22,7 @@ import {
 const COLLECTION_NAME = 'ebook_collection';
 const VECTOR_DIM = 1024;
 const CHUNK_SIZE = 500; // 每个文本块的大小 500 字符
-const EPUB_FILE_PATH = join(process.cwd(), "src/天龙八部.epub"); // 你的 EPUB 文件路径
+const EPUB_FILE_PATH = join(process.cwd(), "src/milvus/天龙八部.epub"); // 你的 EPUB 文件路径
 
 const BOOK_NAME = parse(EPUB_FILE_PATH).name;
 
