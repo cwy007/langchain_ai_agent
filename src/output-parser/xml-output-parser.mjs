@@ -35,7 +35,7 @@ try {
   const result = await parser.parse(response.content);
 
   console.log("\n✅ XMLOutputParser 自动解析的结果:\n");
-  console.log(result);
+  console.log(JSON.stringify(result, null, 2));
 
 } catch (error) {
   console.error("❌ 错误:", error.message);
@@ -81,4 +81,23 @@ try {
 
 // ✅ XMLOutputParser 自动解析的结果:
 
-// { people: [ { person: [Array] } ] }
+// {
+//   "people": [
+//     {
+//       "person": [
+//         {
+//           "name": "阿尔伯特·爱因斯坦"
+//         },
+//         {
+//           "birth_year": "1879"
+//         },
+//         {
+//           "occupation": "物理学家"
+//         },
+//         {
+//           "description": "伟大的物理学家"
+//         }
+//       ]
+//     }
+//   ]
+// }
