@@ -51,6 +51,7 @@ try {
   console.log("📡 实时输出流式内容:\n");
 
   for await (const chunk of stream) {
+    // console.log(chunk);
     if (chunk.length > 0) {
       const toolCall = chunk[0];
 
