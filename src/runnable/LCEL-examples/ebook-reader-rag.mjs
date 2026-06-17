@@ -246,3 +246,8 @@ async function main() {
 }
 
 await main();
+
+// 怎么用 Runnable 的方式来写逻辑:
+// - 分析整个流程，拆成原子步骤
+// - 根据步骤之间的关系选择组件（线性、分支、并行、自定义逻辑等）
+// - 统一调用（invoke、stream、batch）
