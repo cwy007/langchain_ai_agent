@@ -22,3 +22,8 @@ const chain = RunnableSequence.from([
 
 const result = await chain.invoke(5);
 console.log(result);
+
+// 输入: 5
+// 输入: 6
+// 输入: 12
+// 13
