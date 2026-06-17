@@ -66,7 +66,7 @@ const finalWeeklyPrompt = PromptTemplate.fromTemplate(
 现在请生成本周的最终周报：`
 );
 
-const pipelinePrompt = new PipelinePromptTemplate({
+export const pipelinePrompt = new PipelinePromptTemplate({
   pipelinePrompts: [{
       name: 'persona_block',
       prompt: personaPrompt
