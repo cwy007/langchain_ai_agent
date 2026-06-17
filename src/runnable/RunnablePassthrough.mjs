@@ -24,14 +24,24 @@ const chain = RunnableSequence.from([
   (input) => ({
     concept: input
   }),
-  {
+  // {
+  //   original: new RunnablePassthrough(),
+  //   processed: (obj) => ({
+  //     concept: obj.concept,
+  //     upper: obj.concept.toUpperCase(),
+  //     length: obj.concept.length,
+  //   })
+  // },
+
+  // 保留原始属性，只是扩展一些属性使用 RunnablePassthrough.assign
+  RunnablePassthrough.assign({
     original: new RunnablePassthrough(),
     processed: (obj) => ({
-      concept: obj.concept,
+      concept: input,
       upper: obj.concept.toUpperCase(),
       length: obj.concept.length,
     })
-  }
+  })
 ]);
 
 const input = "神说要有光";
@@ -39,6 +49,13 @@ const result = await chain.invoke(input);
 console.log(result);
 
 // {
+//   original: { concept: '神说要有光' },
+//   processed: { concept: '神说要有光', upper: '神说要有光', length: 5 }
+// }
+
+// 保留原始属性，只是扩展一些属性使用 RunnablePassthrough.assign
+// {
+//   concept: '神说要有光',
 //   original: { concept: '神说要有光' },
 //   processed: { concept: '神说要有光', upper: '神说要有光', length: 5 }
 // }
