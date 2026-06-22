@@ -28,6 +28,9 @@
     "langchain": "^1.4.5",
     "mysql2": "^3.22.5",
     "playwright": "^1.60.0",
+    "tencentcloud-sdk-nodejs": "^4.1.253",
+    "tencentcloud-sdk-nodejs-asr": "^4.1.247",
+    "tencentcloud-sdk-nodejs-tts": "^4.1.237",
     "ws": "^8.21.0",
     "zod": "^4.4.3",
     "zod-to-json-schema": "^3.25.2"
