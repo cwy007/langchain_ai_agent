@@ -48,6 +48,7 @@ const graph = new StateGraph(StateAnnotation)
   .addNode("math", mathNode)
   .addNode("chat", chatNode)
   .addEdge(START, "router")
+  // 参数：source, pathFn, targetMap
   .addConditionalEdges("router", (state) => state.route, {
     math: "math",
     chat: "chat",
