@@ -152,3 +152,32 @@ POST /article/_delete_by_query
     "match_all": {}
   }
 }
+
+# 15.查看分词器
+GET /_analyze
+{
+  "analyzer": "standard",
+  "text": "Elasticsearch 是一个分布式搜索引擎"
+}
+
+# 16.检查ES状态
+GET /_cluster/health
+
+GET /
+
+# 17.产看已安装插件
+GET /_cat/plugins?v
+
+# 18.IK 细粒度分词（索引入库用）
+GET /_analyze
+{
+  "analyzer": "ik_max_word",
+  "text": "Elasticsearch 是一个分布式搜索引擎"
+}
+
+# 19.IK 粗粒度分词（搜索用）
+GET /_analyze
+{
+  "analyzer": "ik_smart",
+  "text": "Elasticsearch 是一个分布式搜索引擎"
+}

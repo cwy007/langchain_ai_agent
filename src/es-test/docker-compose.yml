@@ -1,8 +1,8 @@
 services:
   # Elasticsearch 8.17.0 + IK 中文分词（内置到镜像）
   es:
-    # build: ./elasticsearch       # 从本地 Dockerfile 构建镜像（自带IK）
-    image: elasticsearch:8.17.0  # 官方镜像（不带IK）
+    build: ./elasticsearch       # 从本地 Dockerfile 构建镜像（自带IK）
+    # image: elasticsearch:8.17.0  # 官方镜像（不带IK）
     container_name: es-dev
     ports:
       - "9200:9200"               # ES 访问端口
