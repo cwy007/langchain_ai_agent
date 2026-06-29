@@ -1,4 +1,4 @@
-# 更新和删除操作
+# neo4j 更新和删除操作
 
 ## 1. 更新：给珍珠奶茶加热量属性
 
@@ -29,4 +29,4 @@ DELETE r, i
 ## 6. 清空所有节点和关系（本地测试用）
 
 MATCH (n)
-DELETE n
+DETACH DELETE n
