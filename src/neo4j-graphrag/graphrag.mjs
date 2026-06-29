@@ -58,7 +58,6 @@ function normalizeCypher(rawContent) {
   const content = Array.isArray(rawContent) ?
     rawContent.map(item => item?.text ?? '').join('\n') :
     String(rawContent ?? '')
-
   return content
     .replace(/^```(?:cypher)?\s*/i, '')
     .replace(/\s*```$/i, '')
