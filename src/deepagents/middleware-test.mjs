@@ -115,3 +115,23 @@ for (const text of [
   console.log("回复:", messages.at(-1)?.content);
   console.log("modelCallCount:", modelCallCount);
 }
+
+
+// 用户: 用中文说：middleware 是什么？
+
+// [Logging] agent 开始，消息数: 1
+// [Logging] 即将调用模型，当前消息数: 1，已调用: 0 次
+// [AddContext] 注入额外 system 上下文
+// [Logging] 模型返回: 中间件是连接不同软件系统或应用、实现通信和数据交换的软件层。...
+// [Logging] agent 结束，累计模型调用: 1 次
+
+// 回复: 中间件是连接不同软件系统或应用、实现通信和数据交换的软件层。
+// modelCallCount: 1
+
+// 用户: 这句话包含 BLOCKED 关键词
+
+// [Logging] agent 开始，消息数: 1
+// [Logging] 即将调用模型，当前消息数: 1，已调用: 0 次
+// [Blocked] 检测到 BLOCKED，短路结束
+// 回复: 该请求已被 middleware 拦截，无法处理。
+// modelCallCount: 0
