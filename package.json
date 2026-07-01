@@ -36,6 +36,7 @@
     "mysql2": "^3.22.5",
     "neo4j-driver": "^6.1.0",
     "openevals": "^0.2.0",
+    "pg": "^8.22.0",
     "playwright": "^1.60.0",
     "tencentcloud-sdk-nodejs": "^4.1.253",
     "tencentcloud-sdk-nodejs-asr": "^4.1.247",
