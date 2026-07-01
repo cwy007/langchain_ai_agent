@@ -30,6 +30,7 @@
     "dotenv": "^17.4.2",
     "epub2": "^3.0.2",
     "html-to-text": "^10.0.0",
+    "ioredis": "^5.11.1",
     "js-tiktoken": "^1.0.21",
     "langchain": "^1.4.5",
     "langsmith": "^0.7.13",
